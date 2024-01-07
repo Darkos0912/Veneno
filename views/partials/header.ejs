@@ -1,0 +1,35 @@
+<div class="nav">
+    <div class="nav-img">
+        <a href="/">
+            <img src="/img/logoVeneno2.png" alt="Logo-Veneno" class="logo">
+        </a>
+    </div>
+    <div class="burger-menu">
+        <i class="fas fa-bars"></i>
+    </div>
+    <div class="nav-secciones">
+        <ul>
+            <li><a href="/">Inicio</a></li>
+            <li><a href="/products">Productos</a></li>
+            <!--
+                <% if(locals.isAnUserLogged && locals.userData.role == 'admin') {%>
+                <li><a href="/products/create">Crear Productos</a></li>   
+            <% } %> 
+                -->
+            <li><a href="/products/create">Crear Productos</a></li>  
+            <li><a href="/redes">Redes</a></li>
+            <li><a href="">Preguntas Frecuentes</a></li>
+        </ul>
+    </div>
+    <div class="nav-search">
+        <form action="/search" method="GET" class="barra-search">
+            <input type="text" name="search" placeholder="Buscar">
+            <button type="submit"><i class="fa-solid fa-magnifying-glass" style="color: rgb(145, 209, 7)"></i></button>
+        </form>
+        
+    </div>
+    <div class="nav-carrito-usuario">
+        <a href="/products/productCart"><i class="fa-solid fa-cart-plus"></i></a>
+        <a href="/users/login"><i class="fa-solid fa-circle-user"></i></a>
+    </div>
+</div>

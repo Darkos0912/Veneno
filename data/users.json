@@ -1,0 +1,41 @@
+[
+    {
+        "id": 1,
+        "name": "admin",
+        "lastname": "admin",
+        "userName": "admin",
+        "email": "testGestor@gmail.com",
+        "password": "$2a$10$6Bfb/Td7WaFysRl6C/NX0e75YxAI3QhW8OVNQf7CWyIuIuCW0AZsu",
+        "gender": "otro",
+        "image": "avatar-1697031989845.jpg",
+        "age": 23,
+        "direction": "eva peron",
+        "rol": "admin"
+    },
+    {
+        "id": 2,
+        "name": "admin",
+        "lastname": "admin",
+        "userName": "admin",
+        "email": "testGestor@gmail.com",
+        "password": "$2a$10$0UvN/T.8C8Dj7Tu493JLneTJlJk/rkDSiA7SzXoB.zq2kgQ./f87K",
+        "gender": "otro",
+        "image": "avatar-1697032038660.jpg",
+        "age": 23,
+        "direction": "eva peron",
+        "rol": "admin"
+    },
+    {
+        "id": 3,
+        "name": "admin",
+        "lastname": "admin",
+        "userName": "admin",
+        "email": "testGestor1@gmail.com",
+        "password": "$2a$10$UqVOgkxo0TsPmUNY0kMrL.Swgw2QX0gs/r4zb9TXAbiUiI6dpsvtC",
+        "gender": "otro",
+        "image": "avatar-1697032071258.jpg",
+        "age": 23,
+        "direction": "eva peron",
+        "rol": "admin"
+    }
+]

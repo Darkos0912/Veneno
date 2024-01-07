@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <%- include('./partials/head.ejs') %>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/css/home.css">
+    <title>Inicio</title>
+
+</head>
+<body>
+    <header>
+
+        <%- include('./partials/header.ejs') %>
+
+    </header>
+    <main>
+        <section class="section-div-anuncios">
+            <div class="div-anuncios">
+                <div class="slider-frame">
+                    <ul>
+                        <li><img src="/img/venom-banner-1.jpeg" alt=""></li>
+                        <li><img src="/img/venom-banner-2.jpeg" alt=""></li>
+                        <li><img src="/img/venom-banner-3.png" alt=""></li>
+                        <li><img src="/img/veneno-banner-4.jpeg" alt=""></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="section-hombre-mujer">
+            <div class="div-hombre-mujer">
+                <a href="/products/man"><img src="img/hombre.webp" alt=""></a>
+                <a href="/products/girl"><img src="img/mujer.webp" alt=""></a>
+            </div>
+        </section>
+        <section class="section-opcion-prendas">
+            <div class="conteiner">
+                <div class="div-opcion-prendas">
+                    <img src="img/remeraswebp.webp" alt="remeras">
+                    <div class="prenda">
+                        <a href="/products/remeras">REMERAS</a>
+                    </div>
+                </div>
+                <div class="div-opcion-prendas">
+                    <img src="img/camperas.webp" alt="camperas">
+                    <div class="prenda">
+                        <a href="/products/abrigos">ABRIGOS</a>
+                    </div>
+                </div>
+                <div class="div-opcion-prendas">
+                    <img src="img/pantalon.webp" alt="jeans">
+                    <div class="prenda">
+                        <a href="/products/pantalones">PANTALONES</a>
+                    </div>
+                </div>
+                <div class="div-opcion-prendas">
+                    <img src="img/accesorios.jpeg" alt="accesorios">
+                    <div class="prenda">
+                        <a href="/products/accesorios">ACCESORIOS</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section-articulos-en-exhibicion">
+            <div>
+                <h2 class="articulos-en-ofertas">Artículos en Ofertas</h2>
+            </div>
+            <div class="contenedor-de-articulos">
+                <% data.forEach((prenda) =>{ %>
+                    <article>
+                        <% if(prenda.offer === 1){%>
+                        <div class="descripcion">
+                            <a href="/products/<%=prenda.id%>">
+                                <img src="/img/<%=prenda.image %>" alt="<%=prenda.name%>">
+                            </a>
+                            <h3 class="desc"> <%=prenda.name %></h3>
+                            <p class="precioDesc">$<%=prenda.price %></p>
+                            <p class="precio-descuento">$<%=prenda.price - ((prenda.discount*prenda.price)/100)%></p>
+                            <p class="descuento"><%=prenda.discount%>% de descuento</p>
+                            <form action="/products/productCart/<%=prenda.id%>" method="post">
+                                <button class="carrito"><i class="fa-solid fa-cart-plus"></i></button>
+                            </form>
+                            <a class="mas-informacion" href="/products/<%=prenda.id%>">Más información</a>                  
+                        </div>
+                        <%}%>
+                    </article>
+                <%})%>
+            </div>
+        </section>
+    </main>
+    <%- include('./partials/footer.ejs') %>
+</body>
+</html>

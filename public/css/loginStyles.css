@@ -1,0 +1,156 @@
+@import "header.css";
+@import "footer.css";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{ 
+    background-color: #202020;
+    
+    padding: 50px;
+}
+
+/* footer{
+    background-color: #202020;
+    text-align: center;
+}
+
+footer a{
+    padding: 0px 10px;
+}
+
+footer p{
+    color: white;
+} */
+
+h1{
+    color: white;
+    padding: 10px 0;
+}
+
+main a{
+    text-decoration: none;
+    color: #9bcf29;
+}
+
+p{
+    color: white;
+}
+
+div.container-button button{
+    font-size: 20px;
+    padding: 2px 25px;
+    background-color: #9bcf29;
+    border-radius: 5px;
+    color: #202020;
+}
+
+main div {
+    padding-top: 15px; padding-bottom: 15px;
+}
+
+
+div.form-login{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: #202020;
+    padding: 30px 15px;
+    border-radius: 10px;
+    border: solid 5px #9bcf29;
+}
+
+div.form-login form label{
+    color: white;
+}
+
+label{
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+div.form-login form input{
+    border: none;
+    width: 100%;
+    border-radius: 5px;
+    height: 30px;
+    padding: 0 10px;
+}
+
+div.correo-user label{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.password{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+div.container-button{
+    display: flex;
+    justify-content: center;
+}
+
+div.enlace-registro{
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
+
+div.enlace-registro a{
+    padding-left: 5px;
+}
+
+/*Alerta de error*/
+.text-danger{
+    color: red;
+    
+}
+
+
+/* animacion */
+
+
+main a:hover{
+    color: white;
+}
+
+footer a:hover{
+    color: white;
+}
+
+button:hover{
+    font-weight: bold;
+    color: white;
+}
+
+main form input:focus{
+    border: solid 3px #9bcf29;
+    outline: none;
+    /* background-color: #9bcf29; */
+}
+
+
+
+@media screen and (min-width: 768px){
+
+    main{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    div.form-login{
+        width: 50%;
+    }
+}

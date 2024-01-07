@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+
+    <%- include('./partials/head.ejs') %>
+
+    <link rel="stylesheet" href="/css/loginStyles.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="stylesheet" href="/css/profile.css">
+    <title>Mi Perfil</title>
+</head>
+<body>
+    <header>
+        <%- include('./partials/header.ejs') %>
+    </header>
+    <main>
+        
+        <div class="profile-container">
+            
+            <div class="imgProfile">
+                <img src="/img/users/<%=user.image%>" alt="<%=user.name%>">
+            </div>
+            <div class="profile">
+                <h2> Nombre: <%= user.name %> </h2>
+                <h2> Apellido: <%= user.lastname %> </h2>
+                <h2> Email: <%= user.email %> </h2>
+                <h2> Rol del Usuario: <%= user.role %> </h2>
+            </div>
+            <div class="buton-profile">
+                <form action="/users/logout" method="get">
+                    <button class="btnLogout" type="submit" >Cerrar Sesion</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    
+    <%- include('./partials/footer.ejs') %>
+
+</body>
+</html>
