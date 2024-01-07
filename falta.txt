@@ -1,0 +1,19 @@
+Falta aplicar el diseño responsive para los articulos/productos en las vistas que los contengan.
+
+Falta darle iteracción al menu hamburguesa para que muestre los enlaces en el lateral de la página.
+
+Falta emprolijar un poco el diseño para mobile (360px) de la sección carrito de compras.
+
+Solucionar el anuncio de que no se encontraron los productos que se buscaba en el nav. Tiene que agrandar mas las letras, esta muy chico el texto de aviso.
+
+Falta ver el tema del diseño para mobile (360px) de la sección redes.
+
+Falta añadirle la vista de preguntas frecuentes. Con diseño responsive desde cero.
+
+Falta solucionar el tema de que los productos se añadan al carro de productos.
+
+Falta hacer paginados de productos.
+
+
+
+Falta el más importante de todos...El diseño responsive del detalle de productos, en su totalidad.
