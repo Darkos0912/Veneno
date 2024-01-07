@@ -1,4 +1,5 @@
-Veneno es un proyecto Integrador que realicé para finalizar el curso de Desarrollo Web Full Stack. Utilizando HTML, CSS, JAVASCRIPT, NODE, EXPRESS, MYSQL, SEQUELIZE.   
+Veneno es un proyecto Integrador que realicé para finalizar el curso de Desarrollo Web Full Stack. Utilizando HTML, CSS, JAVASCRIPT, NODE, EXPRESS, MYSQL, SEQUELIZE.
+También apliqué diseño responsive para que la página pueda adaptarse al tamaño de la pantalla de cual sea el dispositivo con el que la abras.
 
 Veneno es una empresa ecommerce de Jujuy, que provee indumentaria urbana de calidad para personas apasionadas en este estilo, brindándoles una amplia variedad de talles, precios y métodos de pago que más se adapten a sus gustos.
 
