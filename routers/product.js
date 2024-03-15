@@ -6,7 +6,7 @@ const multer = require("multer");
 
 const storage = multer.diskStorage({
     destination: (req,file,cb)=>{
-        const carpetaDestinoImg = path.join(__dirname, "../public/img");
+        const carpetaDestinoImg = path.join(__dirname, "../public/img/products");
         cb(null,carpetaDestinoImg);
     },
     filename: (req,file,cb)=>{
@@ -27,12 +27,12 @@ router.get('/remeras',productController.remeras);
 router.get('/abrigos',productController.abrigos);
 router.get('/pantalones',productController.pantalones);
 router.get('/accesorios',productController.accesorios);
-router.get('/', productController.products);                                          //1_ /products (GET) Listado de productos
-router.get('/create',productController.create)                                       //2_ /products/create (GET) Formulario de creacion de productos
-router.get('/:id', productController.detail);                                       //3_ /products/:id (GET) Detalle de un producto particular
-router.post('/', upload.single("image"), productController.store);                //4_ /products (POST) Accion de creacion, donde se envia el formulario
-router.get('/edit/:id', productController.edit)                                   //5_ /products/:id/edit (GET) Formulario de edición de productos
-router.put('/:id',upload.single("image"),productController.update)              //6_ /products/:id (PUT) Acción de edición (a donde se envía el formulario):
-router.delete('/delete/:id', productController.delete)                                 //7_ /products/:id (DELETE) Acción de borrado
+router.get('/', productController.products);                                         
+router.get('/create',productController.create)                                     
+router.get('/:id', productController.detail);                                 
+router.post('/', upload.single("image"), productController.store);            
+router.get('/edit/:id', productController.edit)                                   
+router.put('/:id',upload.single("image"),productController.update)              
+router.delete('/delete/:id', productController.delete)                                 
 
 module.exports = router;

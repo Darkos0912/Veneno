@@ -39,27 +39,12 @@ CREATE TABLE `PRODUCTS` (
    PRIMARY KEY (`id`)
 );
 
-CREATE TABLE `SHOPPING_CARTS` (
-   `id` INT NOT NULL AUTO_INCREMENT,
-   `user_id` INT NOT NULL,
-   `product_id` INT NOT NULL,
-   `amount` INT NOT NULL,
-   `price` DECIMAL NOT NULL,
-   `gift` BIT,
-   `address` VARCHAR(255) NOT NULL,
-   PRIMARY KEY (`id`)
-);
-
 
 ALTER TABLE `USERS_PRODUCTS` ADD CONSTRAINT `FK_86f3ed52-1cab-4c95-b682-cf12a5b6e258` FOREIGN KEY (`product_id`) REFERENCES `PRODUCTS`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 ALTER TABLE `USERS_PRODUCTS` ADD CONSTRAINT `FK_007ce80f-e40a-4b13-816c-9cba4220aac4` FOREIGN KEY (`user_id`) REFERENCES `USERS`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
 
-ALTER TABLE `SHOPPING_CARTS` ADD CONSTRAINT `FK_23ad1ab4-8e9b-4ac4-aceb-a757e8790835` FOREIGN KEY (`user_id`) REFERENCES `USERS`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
-ALTER TABLE `SHOPPING_CARTS` ADD CONSTRAINT `FK_2297b6aa-fda4-4e83-9875-434b82f0694c` FOREIGN KEY (`product_id`) REFERENCES `PRODUCTS`(`id`) ON DELETE CASCADE ON UPDATE CASCADE;
-
-INSERT INTO `products` (`id`, `name`, `price`, `description`, `image`, `availability`, `amount`, `cartSale`, `category`, `gender`, `discount`, `offer`) VALUES
+INSERT INTO `products` VALUE
 (1, 'Remeron Manifest', 25000, 'Descripcion de Remeron Manifest', '1701699416005.webp', '1', 50, '0', 'remera', 'varon', 15, 1),
 (2, 'Remeron Balance', 15000, 'Descripción de Remeron Balance', '1701699521758.webp', '1', 50, '0', 'remera', 'mujer', 0, 0),
 (3, 'Buzo Top Essential', 42000, 'Descripción de Buzo Top Essential', '1701699606716.webp', '1', 25, '0', 'abrigo', 'mujer', 20, 1),

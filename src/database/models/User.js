@@ -1,8 +1,9 @@
 module.exports = (sequelize, dataTypes) => {
     const alias = "User";
+
     const cols = {
         id: {
-            type: dataTypes.INTEGER,
+            type: dataTypes.INTEGER(),
             primaryKey: true,
             autoIncrement: true
         },
@@ -12,9 +13,9 @@ module.exports = (sequelize, dataTypes) => {
         lastname: {
             type: dataTypes.STRING(255)
         },
-        /* username: {
+        username: {
             type: dataTypes.STRING(255)
-        }, */
+        },
         email: {
             type: dataTypes.STRING(255)
         },
@@ -37,6 +38,7 @@ module.exports = (sequelize, dataTypes) => {
             type: dataTypes.STRING(100)
         }
     };
+    
     const config = {
         tableName: "users",
         timestamps: false

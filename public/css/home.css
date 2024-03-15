@@ -141,15 +141,13 @@ main{
     font-size: .5rem;
     color:rgb(145,209,7)
 }
+
 /*Falta esto*/
 .articulos-en-ofertas{
     text-align: center;
     color:rgb(189, 185, 185);
     font-size: 1.3rem;
 }
-
-
-
 main .contenedor-de-articulos{
     margin-top: 100px;
     display: flex;
