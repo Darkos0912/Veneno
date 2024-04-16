@@ -1,8 +1,10 @@
 const guestMiddleware = (req,res,next)=>{
-    if (req.session.usuario == undefined){
+    if (req.session.userLogged == undefined){
         next()
     }
-    else (res.redirect('/users/profile'))
+    else {
+        (res.redirect('/users/profile'));
+    }
 }
 
 module.exports = guestMiddleware

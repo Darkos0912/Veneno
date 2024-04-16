@@ -140,6 +140,26 @@ main form input:focus{
     /* background-color: #9bcf29; */
 }
 
+.div-refresh{
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 20px;
+}
+.link{
+    color: #9bcf29;
+    text-decoration: none;
+}
+
+.link:hover{
+    filter: brightness(120%);
+}
+
+i{
+    color:#9bcf29;
+    margin-top: 20px;
+}
+
 
 
 @media screen and (min-width: 768px){

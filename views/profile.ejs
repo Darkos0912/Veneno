@@ -18,13 +18,12 @@
         <div class="profile-container">
             
             <div class="imgProfile">
-                <img src="/img/users/<%=user.image%>" alt="<%=user.name%>">
+                <img src="/img/users/<%=data.image%>" alt="<%=data.name%>">
             </div>
             <div class="profile">
-                <h2> Nombre: <%= user.name %> </h2>
-                <h2> Apellido: <%= user.lastname %> </h2>
-                <h2> Email: <%= user.email %> </h2>
-                <h2> Rol del Usuario: <%= user.role %> </h2>
+                <h2> Nombre: <%= data.name %> </h2>
+                <h2> Apellido: <%= data.lastname %> </h2>
+                <h2> Email: <%= data.email %> </h2>
             </div>
             <div class="buton-profile">
                 <form action="/users/logout" method="get">

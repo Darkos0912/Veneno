@@ -11,7 +11,6 @@ const apiProductsRouter = require("./routers/api/apiProducts");
 const apiUsersRouter = require("./routers/api/apiUsers");
 const cors = require('cors');
 
-const loggedMiddleware = require('./middlewares/loggedMiddleware');
 
 app.use(express.urlencoded({extended:false}));
 app.use(express.json())
@@ -28,7 +27,6 @@ app.use(session({
     resave: true,
     saveUninitialized: true,
 }))
-app.use(loggedMiddleware);
 
 const port = 4200;
 

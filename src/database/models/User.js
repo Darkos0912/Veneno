@@ -33,9 +33,6 @@ module.exports = (sequelize, dataTypes) => {
         },
         address: {
             type: dataTypes.TEXT(255)
-        },
-        role: {
-            type: dataTypes.STRING(100)
         }
     };
     

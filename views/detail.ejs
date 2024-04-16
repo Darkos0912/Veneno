@@ -6,7 +6,6 @@
     <%- include('./partials/head.ejs') %>
         <!-- <title>Detalles del Producto</title> -->
         <link rel="stylesheet" href="/css/productDetailStyles.css">
-
 </head>
 
 <body>
@@ -20,7 +19,7 @@
 
         <div class="caja-padre">
             <nav id="imgs">
-                <img src="/img/<%=data.image%>" alt="<%=data.name%>">
+                <img src="/img/products/<%=data.image%>" alt="<%=data.name%>">
             </nav>
 
             <div class="conteiner-info-product">
@@ -124,7 +123,7 @@
                         <% products.forEach((prenda)=>{%>
                             <div class="card-img">
                                 <a href="/products/<%=prenda.id%>">
-                                    <img src="/img/<%= prenda.image %>" alt="img/<%= prenda.name %>">
+                                    <img src="/img/products/<%= prenda.image %>" alt="img/<%= prenda.name %>">
                                 </a>
                             </div>
                             <div class="info-card">
